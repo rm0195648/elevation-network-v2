@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#b3c5ff", "on-tertiary-fixed-variant": "#653e00", "accent-cyan-soft": "#38BDF8", "text-primary": "#F8FAFC", "error-container": "#93000a", "surface-glass": "rgba(10, 13, 20, 0.72)", "error": "#ffb4ab", "on-primary-fixed-variant": "#003fa4", "surface-variant": "#32353d", "surface-container-high": "#272a32", "tertiary-fixed-dim": "#ffb95f", "primary-fixed-dim": "#b3c5ff", "secondary": "#d3fbff", "surface": "#10131a", "secondary-fixed-dim": "#00dbe9", "primary-fixed": "#dae1ff", "surface-container": "#1d1f27", "surface-container-lowest": "#0b0e15", "surface-deep": "#05070B", "tertiary": "#ffb95f", "on-primary-fixed": "#001849", "primary-container": "#0066ff", "accent-electric-bright": "#2563EB", "inverse-on-surface": "#2d3038", "on-tertiary-fixed": "#2a1700", "inverse-surface": "#e1e2ec", "surface-container-highest": "#32353d", "on-secondary-fixed-variant": "#004f54", "on-error": "#690005", "surface-container-low": "#191b23", "on-surface": "#e1e2ec", "on-tertiary": "#472a00", "background": "#10131a", "on-surface-variant": "#c2c6d8", "tertiary-container": "#a06500", "secondary-container": "#00eefc", "inverse-primary": "#0054d6", "surface-dim": "#10131a", "on-background": "#e1e2ec", "on-primary-container": "#f8f7ff", "on-primary": "#002b75", "on-secondary": "#00363a", "surface-tint": "#b3c5ff", "on-tertiary-container": "#fff7f1", "text-muted": "#94A3B8", "border-glow": "rgba(0, 240, 255, 0.25)", "on-error-container": "#ffdad6", "outline-variant": "#424656", "surface-bright": "#363941", "on-secondary-fixed": "#002022", "tertiary-fixed": "#ffddb8", "outline": "#8c90a1", "on-secondary-container": "#00686f", "secondary-fixed": "#7df4ff", "border-glass": "rgba(255, 255, 255, 0.08)", "accent-gold-bright": "#EAB308" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1.25rem", "space-xl": "3.5rem", "space-lg": "2rem", "space-sm": "0.75rem", "margin-tablet": "2rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "margin": "4rem", "space-xs": "0.375rem", "margin-mobile": "1.25rem" }, "fontFamily": { "label-sm": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "headline-md-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "headline-lg-mobile": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "label-md": [ "Space Grotesk" ], "body-md": [ "Inter" ], "headline-md": [ "Space Grotesk" ] }, "fontSize": { "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "headline-md-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-hero-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero": [ "64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-md": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-deep text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+  
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface-glass backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-20 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-space-md">
+  
+  <div class="flex items-center gap-space-sm"><img alt="Elevation Network Logo" class="h-36 w-auto object-contain" src="assets/logo elevation gradient...png"/><span class="font-label-md text-label-md text-text-primary tracking-wider uppercase hidden sm:inline-block">Elevation Network</span>
+  </div>
+  
+  <nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-sm py-space-xs rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="web-design" href="#">Home</a><a class="px-space-sm py-space-xs rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="web-design" href="#">Web Design</a><a class="px-space-sm py-space-xs rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="branding" href="#">Branding</a><a class="px-space-sm py-space-xs rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="business-cards" href="#">Print Design</a><a class="px-space-sm py-space-xs rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="contact" href="#">Promotion</a></nav><div class="flex items-center gap-space-sm"><a class="px-space-md py-space-xs rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md transition-all shadow-[0_0_20px_rgba(0,102,255,0.35)] hover:shadow-[0_0_25px_rgba(0,240,255,0.4)] hover:brightness-110" data-path="contact" href="#">Contact</a></div></div></div></header><main class="w-full pt-20 bg-surface-deep min-h-screen"><div class="flex flex-col w-full">
+
+
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-deep -mt-20 pt-28 pb-20 md:pb-32 px-margin-mobile md:px-margin-tablet lg:px-margin">
+
+
+<!-- Ambient Radial Lighting Mesh -->
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1100px] h-[580px] bg-primary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/4 -right-48 w-[600px] h-[600px] bg-secondary-container/10 rounded-full blur-[130px] pointer-events-none"></div>
+<div class="absolute top-2/3 -left-48 w-[500px] h-[500px] bg-accent-electric-bright/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+
+<!-- Decorative Elevation Grid Lines (Inline Animated Vector) -->
+<div class="absolute inset-0 opacity-15 pointer-events-none flex items-center justify-center">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="heroGridGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3"></stop>
+<stop offset="60%" stop-color="#0066FF" stop-opacity="0.1"></stop>
+<stop offset="100%" stop-color="#05070B" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,700 L720,250 L1440,700 M0,750 L720,320 L1440,750 M0,800 L720,400 L1440,800 M240,800 L720,400 L1200,800 M480,800 L720,400 L960,800" fill="none" stroke="url(#heroGridGrad)" stroke-width="1.2"></path>
+</svg>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto flex flex-col items-center text-center">
+<!-- Eyebrow Pill Badge -->
+<div class="inline-flex items-center gap-space-xs px-4 py-1.5 rounded-full bg-surface-container/80 backdrop-blur-md shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-accent-gold-bright animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-accent-gold-bright -ml-3"></span>
+<span class="font-label-sm text-label-sm text-accent-cyan-soft tracking-widest uppercase">Digital Creative Technology</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-headline-lg-mobile md:text-display-hero text-text-primary max-w-4xl tracking-tight mb-4">
+        Your Vision. <span class="bg-gradient-to-r from-primary via-secondary-container to-text-primary bg-clip-text text-transparent">Elevated.</span>
+</h1>
+<!-- Supporting Headline -->
+<p class="font-headline-sm text-headline-sm text-on-surface-variant max-w-2xl mb-4 font-medium">
+        Creative Design. Powerful Websites. Limitless Possibilities.
+      </p>
+<!-- Description -->
+<p class="font-body-lg text-body-lg text-text-muted max-w-2xl mb-10 leading-relaxed">
+        Elevation Network helps forward-thinking ventures stand out with bespoke web platforms, memorable identity systems, and high-impact digital solutions engineered to scale.
+      </p>
+<!-- CTA Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 mb-14 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center justify-center gap-2 shadow-[0_0_28px_rgba(0,102,255,0.45)] hover:shadow-[0_0_36px_rgba(0,240,255,0.55)] hover:brightness-110 transition-all" href="#services">
+<span>Explore Our Services</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-surface-container/70 backdrop-blur-md text-text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container-high hover:text-accent-cyan-soft transition-all shadow-sm" href="#contact">
+<span class="material-symbols-outlined text-accent-gold-bright text-[18px]">bolt</span>
+<span>Start a Project</span>
+</a>
+</div>
+
+<!-- Metrics / Trust Ribbon -->
+<div class="w-full max-w-4xl py-3 px-6 rounded-2xl bg-surface-container-lowest/60 backdrop-blur-md shadow-inner flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-text-muted font-label-sm text-label-sm uppercase tracking-wider mb-14">
+<span class="flex items-center gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-accent-cyan-soft"></span> Local</span>
+<span class="text-surface-variant">•</span>
+<span class="flex items-center gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Professional quality</span>
+<span class="text-surface-variant">•</span>
+<span class="flex items-center gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-accent-gold-bright"></span> Service you can trust</span>
+<span class="text-surface-variant">•</span>
+<span class="flex items-center gap-2 text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span> Affordable</span>
+</div>
+
+<!-- Hero Visual Showcase Mockup (Layered 3D Depth) -->
+<div class="relative w-full max-w-5xl rounded-2xl bg-surface-container-lowest/80 p-2 sm:p-4 shadow-2xl backdrop-blur-xl">
+<!-- Browser Chrome -->
+<div class="h-10 px-4 rounded-t-xl bg-surface-container flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+</div>
+<div class="px-6 py-1 rounded-md bg-surface-container-lowest text-text-muted font-mono text-[12px] flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-accent-cyan-soft">lock</span>
+<span>https://core.elevation-network.net/platform</span>
+</div>
+<div class="flex items-center gap-2 text-text-muted">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</div>
+</div>
+<!-- Inside Viewport Canvas -->
+<div class="relative w-full h-[320px] sm:h-[460px] rounded-b-xl overflow-hidden bg-surface-deep flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-85" data-alt="A dark cinematic UI workspace showcasing futuristic 3D graphs, electric blue radiant telemetry charts, typography specimens, and geometric glowing nodes in deep obsidian and neon cyan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABEepvhbCcWPGbwAXRcHiX9s91jNFLUaPBiJS5Rg4GbzQcFSoYou56sWeI83tsKTD9JPuNNwZX5Q7v4JXb286WGAC8tUL-I6ChYLG5m_-RvuZAk6zzu_k503NefhWP8h3zDPBfWN6h-DxHjZAIMaIrK5DQyi4ZcfTYLu9OyAsjsRk6ljAG_iy4A7dBlb2Is6yw-zI-3f5PamGzx3u0ITfCHr655PL1fZkgiTgLpofSh5tX9TsUTcVR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-deep via-transparent to-transparent"></div>
+<!-- Central Elevation Watermark Emblem -->
+<div class="absolute flex flex-col items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-accent-cyan-soft/30 text-[96px] animate-pulse">keyboard_double_arrow_up</span>
+<span class="font-headline-sm text-headline-sm text-text-primary/70 tracking-widest uppercase -mt-4">Next-Gen Interface Hub</span>
+</div>
+<!-- Floating Interactive Glass Cards -->
+<div class="absolute bottom-6 left-6 p-4 rounded-xl bg-surface-container/90 backdrop-blur-md shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-accent-cyan-soft">
+<span class="material-symbols-outlined text-[22px]">speed</span>
+</div>
+<div class="text-left">
+<div class="font-headline-sm text-headline-sm text-text-primary leading-none">100 / 100</div>
+<div class="font-label-sm text-label-sm text-text-muted">Lighthouse Web Core</div>
+</div>
+</div>
+<div class="absolute top-6 right-6 p-4 rounded-xl bg-surface-container/90 backdrop-blur-md shadow-xl hidden sm:flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-accent-gold-bright/20 flex items-center justify-center text-accent-gold-bright">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div class="text-left">
+<div class="font-headline-sm text-headline-sm text-text-primary leading-none">99.99%</div>
+<div class="font-label-sm text-label-sm text-text-muted">High Availability Uptime</div>
+</div>
+</div>
+<div class="absolute bottom-6 right-6 p-4 rounded-xl bg-surface-container/90 backdrop-blur-md shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">palette</span>
+</div>
+<div class="text-left">
+<div class="font-label-md text-label-md text-text-primary leading-none">Vector Brandcraft</div>
+<div class="font-label-sm text-label-sm text-text-muted">Pixel-Precision Systems</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES OVERVIEW SECTION -->
+<section class="w-full py-24 bg-surface px-margin-mobile md:px-margin-tablet lg:px-margin" id="services">
+<div class="max-w-[1440px] mx-auto flex flex-col">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div>
+<div class="inline-flex items-center gap-2 font-label-sm text-label-sm text-accent-cyan-soft uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">design_services</span>
+<span>Comprehensive Agency Capabilities</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-primary">
+            Everything You Need to Elevate Your Brand.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-text-muted max-w-md">
+          Tailored digital craft engineered to captivate audiences, reinforce market authority, and accelerate measurable business growth.
+        </p>
+</div>
+
+
+<!-- 4 High-End Services Glass Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+
+
+<!-- Service 1: Web Design & Development -->
+<div class="group relative rounded-2xl bg-surface-container-low p-8 shadow-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary-fixed group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[30px]">devices</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted font-mono">01 // CORE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">
+              Website Design &amp; Development
+            </h3>
+<p class="font-body-md text-body-md text-text-muted mb-6 leading-relaxed">
+              Modern, responsive websites built to showcase your business, engage your audience, and turn visitors into customers.
+            </p>
+<div class="grid grid-cols-2 gap-2 mb-8">
+
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-fixed group-hover:text-secondary-fixed-dim transition-colors" href="#web-showcase">
+<span>Explore Web Design</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+
+
+<!-- Service 2: Branding & Graphic Design -->
+<div class="group relative rounded-2xl bg-surface-container-low p-8 shadow-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-xl bg-accent-cyan-soft/20 flex items-center justify-center text-accent-cyan-soft group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[30px]">auto_awesome</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted font-mono">02 // IDENTITY</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">
+              Branding &amp; Graphic Design
+            </h3>
+<p class="font-body-md text-body-md text-text-muted mb-6 leading-relaxed">
+              Build a recognizable identity with professional logos, cohesive brand visuals, and creative digital assets that leave a mark.
+            </p>
+<div class="grid grid-cols-2 gap-2 mb-8">
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-fixed group-hover:text-secondary-fixed-dim transition-colors" href="#branding-showcase">
+<span>Explore Branding</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+
+
+<!-- Service 3: Business Cards & Print Design -->
+<div class="group relative rounded-2xl bg-surface-container-low p-8 shadow-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-xl bg-accent-gold-bright/20 flex items-center justify-center text-accent-gold-bright group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[30px]">contact_page</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted font-mono">03 // TACTILE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">
+              Business Cards &amp; Print Design
+            </h3>
+<p class="font-body-md text-body-md text-text-muted mb-6 leading-relaxed">
+              Make a lasting first impression with professionally designed business cards, luxury foil treatments, and branded marketing collateral.
+            </p>
+<div class="grid grid-cols-2 gap-2 mb-8">
+
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-fixed group-hover:text-secondary-fixed-dim transition-colors" href="#branding-showcase">
+<span>Explore Print Design</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+
+
+<!-- Service 4: Flyers & Ads -->
+<div class="group relative rounded-2xl bg-surface-container-low p-8 shadow-xl flex flex-col justify-between hover:bg-surface-container transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-14 h-14 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary-fixed-dim group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[30px]">tv</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted font-mono">04 // Promotion</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">
+              Flyers & Ads
+            </h3>
+<p class="font-body-md text-body-md text-text-muted mb-6 leading-relaxed">
+             Eye-catching advertisements, flyers, brochures, and promotional materials for businesses and events.
+            </p>
+<div class="grid grid-cols-2 gap-2 mb-8">
+
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-fixed group-hover:text-secondary-fixed-dim transition-colors" href="#streaming-section">
+<span>Explore Promotion</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Action Bar -->
+<div class="w-full p-8 mb-8 rounded-2xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-md">
+<span class="material-symbols-outlined text-[24px]">rocket_launch</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-text-primary">Ready for a website that outshines the competition?</div>
+<p class="font-body-sm text-body-sm text-text-muted">We construct bespoke digital architectures delivered on schedule and optimized for conversions.</p>
+</div>
+</div>
+<a class="px-8 py-3.5 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md whitespace-nowrap shadow-[0_0_24px_rgba(0,102,255,0.4)] hover:brightness-110 transition-all" href="#contact">
+          Let’s Build Your Website
+        </a>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<!-- CLIENT TESTIMONIALS SECTION -->
+<section class="w-full py-24 bg-surface px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="max-w-[1440px] mx-auto flex flex-col">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 font-label-sm text-label-sm text-accent-cyan-soft uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">format_quote</span>
+<span>Verified Client Voices</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-primary mb-3">
+          What Our Clients Say.
+        </h2>
+<p class="font-body-md text-body-md text-text-muted">
+          Client experiences and partnerships across design, code, and brand acceleration (Case spotlights).
+        </p>
+</div>
+
+
+<!-- Testimonial Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-accent-gold-bright mb-6">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-text-primary mb-8 italic leading-relaxed">
+              “Elevation Network completely transformed our digital presence. Our new platform saw a 140% increase in qualified inquiries within the first 60 days.”
+            </p>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center font-bold text-primary font-headline-sm text-headline-sm">
+              MV
+            </div>
+<div>
+<div class="font-label-md text-label-md text-text-primary">Marcus Vance</div>
+<div class="font-body-sm text-body-sm text-text-muted">Managing Director, Apex Capital</div>
+</div>
+</div>
+</div>
+
+<!-- Testimonial 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-accent-gold-bright mb-6">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-text-primary mb-8 italic leading-relaxed">
+              “The attention to detail in our branding and business cards was exceptional. They gave our brand the credibility of a Fortune 500 company right out of the gate.”
+            </p>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="w-12 h-12 rounded-full bg-accent-cyan-soft/20 flex items-center justify-center font-bold text-accent-cyan-soft font-headline-sm text-headline-sm">
+              ER
+            </div>
+<div>
+<div class="font-label-md text-label-md text-text-primary">Elena Rostova</div>
+<div class="font-body-sm text-body-sm text-text-muted">Founder, Studio Nova</div>
+</div>
+</div>
+</div>
+
+<!-- Testimonial 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-accent-gold-bright mb-6">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-text-primary mb-8 italic leading-relaxed">
+              “Fast turnaround, clean code, and impeccable design sense. Working with the Elevation team was smooth, responsive, and highly collaborative throughout.”
+            </p>
+</div>
+<div class="flex items-center gap-4 pt-4 border-t border-white/5">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center font-bold text-secondary-fixed-dim font-headline-sm text-headline-sm">
+              DS
+            </div>
+<div>
+<div class="font-label-md text-label-md text-text-primary">David Sterling</div>
+<div class="font-body-sm text-body-sm text-text-muted">Tech Lead, Horizon Tech</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- CONTACT & PROJECT INQUIRY SECTION -->
+<section class="w-full py-24 bg-surface-deep px-margin-mobile md:px-margin-tablet lg:px-margin" id="contact">
+<div class="max-w-[1440px] mx-auto flex flex-col">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Contact Context Column (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="inline-flex items-center gap-2 font-label-sm text-label-sm text-accent-cyan-soft uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Initiate Project Engagement</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-primary mb-4">
+            Let's Build Something Exceptional.
+          </h2>
+<p class="font-body-lg text-body-lg text-text-muted mb-8 leading-relaxed">
+            Have an idea, need a website, or want to elevate your brand? Tell us what you're working on, and let's bring it to life.
+          </p>
+
+</div>
+
+
+<div class="p-6 mb-8 rounded-2xl bg-surface-container flex items-start gap-4 w-full lg:w-[500%]">
+
+
+<div class="w-10 h-10 rounded-xl bg-accent-gold-bright/20 flex items-center justify-center text-accent-gold-bright shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-text-muted uppercase">Response Guaranteed</div>
+<div class="font-label-md text-label-md text-text-primary">Within 24 business hours</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Form Column (7 Cols) -->
+<div class="lg:col-span-7 rounded-3xl bg-surface-container p-8 sm:p-10 shadow-2xl">
+<form class="flex flex-col gap-6" id="inquiryForm">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="fullName">Your Name <span class="text-error">*</span></label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="fullName" placeholder="Marcus Vance" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="emailAddr">Email Address <span class="text-error">*</span></label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="emailAddr" placeholder="marcus@apexcapital.co" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="companyName">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="companyName" placeholder="123-456-7890" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="serviceSelect">Service Needed</label>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all" id="serviceSelect">
+<option value="web-design">Website Design</option>
+<option value="web-dev">Website Development</option>
+<option value="branding">Branding &amp; Identity</option>
+<option value="business-cards">Business Cards &amp; Print</option>
+<option value="streaming">Streaming Platform Setup</option>
+<option value="other">Other Bespoke Requirement</option>
+</select>
+</div>
+</div>
+
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="projectScope">Additional Details <span class="text-error">*</span></label>
+<textarea class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="projectScope" placeholder="" required="" rows="4"></textarea>
+</div>
+<button class="w-full py-4 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(0,102,255,0.4)] hover:shadow-[0_0_32px_rgba(0,240,255,0.5)] hover:brightness-110 transition-all cursor-pointer" id="submitBtn" type="submit">
+<span>Send</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<div class="hidden p-4 rounded-xl bg-secondary-container/20 text-secondary-fixed text-center font-label-md text-label-md" id="formSuccess">
+              Thank you! Your project inquiry has been logged. We will reach out within 24 hours.
+            </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Filter & Form Handling Micro-Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Filter functionality
+      const filterButtons = document.querySelectorAll('#filter-container button');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary-container');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          btn.classList.add('bg-primary-container', 'text-on-primary-container');
+
+          const filter = btn.getAttribute('data-filter');
+          projectCards.forEach(card => {
+            if (filter === 'all') {
+              card.style.display = 'flex';
+            } else {
+              const categories = card.getAttribute('data-category') || '';
+              if (categories.includes(filter)) {
+                card.style.display = 'flex';
+              } else {
+                card.style.display = 'none';
+              }
+            }
+          });
+        });
+      });
+
+      // Form submit simulation
+      const form = document.getElementById('inquiryForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const formSuccess = document.getElementById('formSuccess');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>Transmitting Scoping File...</span>';
+          setTimeout(() => {
+            submitBtn.classList.add('hidden');
+            formSuccess.classList.remove('hidden');
+          }, 800);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl"><div class="lg:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm">Elevation Network</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-text-primary uppercase tracking-wider mb-space-xs">Services</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="web-design" href="#">Web Design &amp; Experience</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="branding" href="#">Branding &amp; Systems</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="business-cards" href="#">Business Cards &amp; Print Luxe</a>
+  
+  
+
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed-dim hover:underline underline-offset-4 transition-all duration-200" data-path="streaming" href="streaming.html">Streaming &amp; Media Platforms</a>
+
+</div><div class="lg:col-span-4 flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-text-primary uppercase tracking-wider mb-space-xs">Inquiries</span><a class="font-body-md text-body-md text-primary hover:text-secondary-fixed-dim transition-colors" href="mailto:inquiry@elevation-network.net">rm.elevation.officia@gmail.com</a><div class="flex items-center gap-space-sm pt-space-sm"><a aria-label="Global Network" class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">language</span></a><a aria-label="Studio Channel" class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span></a><a aria-label="Agency Projects" class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">deployed_code</span></a></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-text-muted font-body-sm text-body-sm"><p>© 2026 Elevation Network. All rights reserved.</p></div></div></div></footer></body></html>
