@@ -422,25 +422,33 @@
 
 <!-- Form Column (7 Cols) -->
 <div class="lg:col-span-7 rounded-3xl bg-surface-container p-8 sm:p-10 shadow-2xl">
-<form class="flex flex-col gap-6" id="inquiryForm">
+<form
+  class="flex flex-col gap-6"
+  id="inquiryForm"
+  action="https://formsubmit.co/rm.elevation.official@gmail.com"
+  method="POST"
+>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
 <label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="fullName">Your Name <span class="text-error">*</span></label>
-<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="fullName" placeholder="Marcus Vance" required="" type="text"/>
+
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="fullName" name="name" placeholder="Marcus Vance" required="" type="text"/>
 </div>
+
 <div class="flex flex-col gap-2">
 <label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="emailAddr">Email Address <span class="text-error">*</span></label>
-<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="emailAddr" placeholder="marcus@apexcapital.co" required="" type="email"/>
+
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="emailAddr" name="email" placeholder="marcus@apexcapital.co" required="" type="email"/>
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
 <label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="companyName">Phone Number</label>
-<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="companyName" placeholder="123-456-7890" type="text"/>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="companyName" name="phone" placeholder="123-456-7890" type="text"/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="serviceSelect">Service Needed</label>
-<select class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all" id="serviceSelect">
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all" id="serviceSelect" name="service">
 <option value="web-design">Website Design</option>
 <option value="web-dev">Website Development</option>
 <option value="branding">Branding &amp; Identity</option>
@@ -453,7 +461,7 @@
 
 <div class="flex flex-col gap-2">
 <label class="font-label-sm text-label-sm text-text-primary uppercase tracking-wider" for="projectScope">Additional Details <span class="text-error">*</span></label>
-<textarea class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="projectScope" placeholder="" required="" rows="4"></textarea>
+<textarea class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest text-text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-accent-cyan-soft transition-all placeholder:text-text-muted/40" id="projectScope" name="message" placeholder="" required="" rows="4"></textarea>
 </div>
 <button class="w-full py-4 rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(0,102,255,0.4)] hover:shadow-[0_0_32px_rgba(0,240,255,0.5)] hover:brightness-110 transition-all cursor-pointer" id="submitBtn" type="submit">
 <span>Send</span>
@@ -499,23 +507,16 @@
         });
       });
 
-      // Form submit simulation
-      const form = document.getElementById('inquiryForm');
-      const submitBtn = document.getElementById('submitBtn');
-      const formSuccess = document.getElementById('formSuccess');
+// FormSubmit: allow the form to submit normally
+const form = document.getElementById('inquiryForm');
+const submitBtn = document.getElementById('submitBtn');
 
-      if (form) {
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-          submitBtn.disabled = true;
-          submitBtn.innerHTML = '<span>Transmitting Scoping File...</span>';
-          setTimeout(() => {
-            submitBtn.classList.add('hidden');
-            formSuccess.classList.remove('hidden');
-          }, 800);
-        });
-      }
-    });
+if (form && submitBtn) {
+  form.addEventListener('submit', function () {
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>Sending Inquiry...</span>';
+  });
+}
   </script>
 </div></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-xl"><div class="lg:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm">Elevation Network</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-text-primary uppercase tracking-wider mb-space-xs">Services</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="web-design" href="#">Web Design &amp; Experience</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="branding" href="#">Branding &amp; Systems</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="business-cards" href="#">Business Cards &amp; Print Luxe</a>
   
